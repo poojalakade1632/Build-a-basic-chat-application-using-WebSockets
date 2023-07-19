@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Poppins&family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #cbb6b6;
+    font-family: 'Poppins', sans-serif;
+}
+
+section.chat_section{
+    width:800px;
+    max-width: 90%;
+    background: #fff;
+    border-radius: 5px;
+    background-image: url("back2.png");
+    box-shadow:0 25px 50px rgba(116, 119, 121, 0.2);
+    border: 1px solid #cbb6b6;
+}
+
+.brand{
+    display: flex;
+    background-color:rgb(221, 212, 231);
+    border-radius: 5px;
+    border: 2px solid #6e6d9a;
+}
+.brand img{
+    padding: 3px 4px;
+}
+.brand h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(30, 28, 28);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.icons{
+    display: flex;
+    margin-left:480px;
+    margin-top: 25px;
+    cursor: pointer;
+    position: static;
+    
+}
+.icons i{
+    padding-right: 30px;
+}
+@media screen and (max-width: 786px){
+    .icons  {
+        margin-left:310px;
+    }
+  }
+.msg_area{
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+   
+}
+
+textarea{
+    width: 100%;
+    max-height: 30%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f2eded;
+}
+
+.msg{
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+}
+
+.incoming_msg{
+    background: #cbe0c7;
+    /* color: #fff; */
+    color: black;
+    border: 1px solid rgb(43, 226, 107);
+    width:40%;
+    border-radius: 7px;
+    margin-top: 10px;
+    font-size:medium;
+    padding: 3px 5px;
+}
+
+.outgoing_msg{
+    background: #e9eafd;
+    border: 1px solid blueviolet;
+    color: black;
+    margin-left: auto;
+    width: 40%;
+    border-radius: 7px;
+    margin-top: 10px;
+    font-size: medium;
+    padding: 3px 5px;
+}
+
+.msg_area h4{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: rgb(23, 19, 19);
+    font-size: 14px;
+}
+
+
