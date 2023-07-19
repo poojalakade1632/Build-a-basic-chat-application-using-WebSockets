@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat app</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+     <section class="chat_section">
+        <div class="brand">
+            <img src="logo2.png" alt="" width="50px" height="50px">
+        <h1>Chat app</h1>
+        <div class="icons">
+        <i class="fa-solid fa-camera fa-xl"></i>
+        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+    </div>
+    
+        </div>
+        <div class="msg_area"></div>
+     <div>
+            <textarea id="textarea" cols="20" rows="1" placeholder="Write a message and press Enter.."></textarea>
+        </div>
+     </section>
+
+     <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>
+
